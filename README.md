@@ -18,6 +18,8 @@ It's important to highlight that Happ does not provide VPN services for purchase
 
 To report a problem, use our [service](https://issues.happ.su/)
 
+![Happ_win7.png](/Happ_win7.png)
+
 # Install Happ for Windows 7
 
 We will need [**VxKex Version 1_2_1_2229**](https://github.com/i486/VxKex/releases/download/Version1.2.1.2229/KexSetup_Release_1_2_1_2229.exe) and two additional libraries. You can either download them or extract them from the **System32** folder on Windows 10, but only specific versions of these libraries will work.
@@ -31,7 +33,7 @@ We will need [**VxKex Version 1_2_1_2229**](https://github.com/i486/VxKex/releas
 We also need Xray and tun2proxy builds for Windows 7.
 
 * [**Xray-win7-64.zip**](https://github.com/XTLS/Xray-core/releases/download/v26.7.28/Xray-win7-64.zip) version: **26.7.28**
-  SHA-1: `2C593A5FA5FF5DFF36B2815D22A5F3AB486D6763`
+  SHA-1: `2c593a5fa5ff5dff36b2815d22a5f3ab486d6763`
 
 * [**tun2proxy-x86_64-win7-windows-msvc.zip**](https://github.com/tun2proxy/tun2proxy/releases/download/v0.7.15/tun2proxy-x86_64-win7-windows-msvc.zip) version: **0.7.15 (748f999 2025-09-09 06:08:31)**
   SHA-1: `d3eeb008863672abd8b4950ddb1797a688cdb232`
@@ -39,7 +41,7 @@ We also need Xray and tun2proxy builds for Windows 7.
 All these files can be found in the [**release**](https://github.com/arz321/happ-desktop-windows-7/releases).
 
 1. Download and install [**VxKex**](https://github.com/i486/VxKex/releases/download/Version1.2.1.2229/KexSetup_Release_1_2_1_2229.exe).
-2. Download the [Happ installer](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe)/[mirror](https://files-hub.com/download/windows/latest?arch=x64). In the properties of `setup-Happ.x64.exe`, open the **VxKex** tab and enable the following options:
+2. Download the [Happ installer](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe)/[mirror](https://files-hub.com/download/windows/latest?arch=x64) or get it from the [**release**](https://github.com/arz321/happ-desktop-windows-7/releases/download/Release/setup-Happ.x64.exe). In the properties of `setup-Happ.x64.exe`, open the **VxKex** tab and enable the following options:
 
    * **Enable VxKex for this program**
    * **Report a different version of Windows**
