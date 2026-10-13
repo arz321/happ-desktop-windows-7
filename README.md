@@ -32,7 +32,7 @@ We will need [**VxKex Version 1_2_1_2229**](https://github.com/i486/VxKex/releas
 
 We also need Xray and tun2proxy builds for Windows 7.
 
-* [**Xray-win7-64.zip**](https://github.com/XTLS/Xray-core/releases/download/v26.7.28/Xray-win7-64.zip) version: **26.7.28**
+* [**Xray-win7-64.zip**](https://github.com/XTLS/Xray-core/releases/download/v26.9.9/Xray-win7-64.zip) version: **26.9.9**
   SHA-1: `6919f613ef64530aa2339ccc306da5c6490d0106`
 
 * [**tun2proxy-x86_64-win7-windows-msvc.zip**](https://github.com/tun2proxy/tun2proxy/releases/download/v0.7.15/tun2proxy-x86_64-win7-windows-msvc.zip) version: **0.7.15 (748f999 2025-09-09 06:08:31)**
