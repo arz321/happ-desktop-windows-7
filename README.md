@@ -33,7 +33,7 @@ We will need [**VxKex Version 1_2_1_2229**](https://github.com/i486/VxKex/releas
 We also need Xray and tun2proxy builds for Windows 7.
 
 * [**Xray-win7-64.zip**](https://github.com/XTLS/Xray-core/releases/download/v26.7.28/Xray-win7-64.zip) version: **26.7.28**
-  SHA-1: `2c593a5fa5ff5dff36b2815d22a5f3ab486d6763`
+  SHA-1: `6919f613ef64530aa2339ccc306da5c6490d0106`
 
 * [**tun2proxy-x86_64-win7-windows-msvc.zip**](https://github.com/tun2proxy/tun2proxy/releases/download/v0.7.15/tun2proxy-x86_64-win7-windows-msvc.zip) version: **0.7.15 (748f999 2025-09-09 06:08:31)**
   SHA-1: `d3eeb008863672abd8b4950ddb1797a688cdb232`
@@ -41,21 +41,24 @@ We also need Xray and tun2proxy builds for Windows 7.
 All these files can be found in the [**release**](https://github.com/arz321/happ-desktop-windows-7/releases).
 
 1. Download and install [**VxKex**](https://github.com/i486/VxKex/releases/download/Version1.2.1.2229/KexSetup_Release_1_2_1_2229.exe).
-2. Download the [Happ installer](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe)/[mirror](https://files-hub.com/download/windows/latest?arch=x64) or get it from the [**release**](https://github.com/arz321/happ-desktop-windows-7/releases/download/Release/setup-Happ.x64.exe). In the properties of `setup-Happ.x64.exe`, open the **VxKex** tab and enable the following options:
+2. Download and run [**HappVxKexSetup.bat**](https://github.com/arz321/happ-desktop-windows-7/releases/download/Release/HappVxKexSetup.bat). It will automatically configure VxKex compatibility settings for the following executables:
+
+   * `%ProgramFiles%\FlyFrogLLC\Happ\Happ.exe` → Windows 10 mode
+   * `%ProgramFiles%\FlyFrogLLC\Happ\happd.exe` → Windows 10 mode
+   * `%LOCALAPPDATA%\Happ\update\setup-Happ.x64.exe` → Windows 10 mode
+   * `%ProgramFiles%\FlyFrogLLC\Happ\core\xray.exe` → Windows 7 mode
+   * `%ProgramFiles%\FlyFrogLLC\Happ\tun2\tun2proxy-bin.exe` → Windows 7 mode
+   * It will also enable the **"Run this program as an administrator"** compatibility option for `Happ.exe`, which is required for tun2proxy to function correctly.
+
+3. Download the [Happ installer](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe)/[mirror](https://files-hub.com/download/windows/latest?arch=x64) or get it from the [**release**](https://github.com/arz321/happ-desktop-windows-7/releases/download/Release/setup-Happ.x64.exe). In the properties of `setup-Happ.x64.exe`, open the **VxKex** tab and enable the following options:
 
    * **Enable VxKex for this program**
    * **Report a different version of Windows**
    * **Then select **Windows 10** from the list.**
 
-3. Install `setup-Happ.x64.exe` and ignore any errors that may appear.
-4. Open the folder where Happ was installed and extract the contents of [**happ_win7.zip**](https://github.com/arz321/happ-desktop-windows-7/releases/download/Release/happ_win7.zip) into it, replacing the existing files (`msvcp_win.dll`, `icuuc.dll`, the `core` folder and the `tun2` folder).
-5. Run `HappVxKexSetup.bat`. It will automatically configure VxKex compatibility settings for the following executables:
-
-   * `%ProgramFiles%\FlyFrogLLC\Happ\Happ.exe` → Windows 10 mode
-   * `%LOCALAPPDATA%\Happ\update\setup-Happ.x64.exe` → Windows 10 mode
-   * `%ProgramFiles%\FlyFrogLLC\Happ\core\xray.exe` → Windows 7 mode
-   * `%ProgramFiles%\FlyFrogLLC\Happ\tun2\tun2proxy-bin.exe` → Windows 7 mode
-   * It will also enable the **"Run this program as an administrator"** compatibility option for `Happ.exe`, which is required for tun2proxy to function correctly.
+4. Install `setup-Happ.x64.exe` and ignore any errors that may appear.
+5. Open the folder where Happ was installed and extract the contents of [**happ_win7.zip**](https://github.com/arz321/happ-desktop-windows-7/releases/download/Release/happ_win7.zip) into it, replacing the existing files (`msvcp_win.dll`, `icuuc.dll`, the `core` folder and the `tun2` folder).
+6. Run Happ.
 
 If you encounter the error **"Failed to initialize graphics backend D3D11"**, you need to change the Happ UI rendering settings in the Windows registry.
 
